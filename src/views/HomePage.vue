@@ -3,7 +3,7 @@
     <!-- Hero Section -->
     <section id="hero" class="section hero">
       <div class="content">
-        <h1>Welcome to My Portfolio</h1>
+        <h1>Welcome to Sheerfolio</h1>
         <p>Your tagline or introduction goes here.</p>
         <button @click="scrollToSection('portfolio')">See My Work</button>
       </div>
