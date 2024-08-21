@@ -68,6 +68,10 @@ export default {
 
 <style scoped>
 /* Base Styles */
+.homepage {
+  background: red;
+}
+
 .section {
   padding: 60px 20px;
   margin: 0 auto;

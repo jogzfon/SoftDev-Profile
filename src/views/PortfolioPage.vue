@@ -1,6 +1,7 @@
 <template>
   <div id="portfolio">
     <header> Portfolio Here </header>
+    <h1>Hi Im Sheer Nice To Meet ya</h1>
   </div>
 </template>
 
@@ -14,6 +15,8 @@ export default {
 </script>
 
 <style>
-
+.header {
+  color: black;
+}
 
 </style>
