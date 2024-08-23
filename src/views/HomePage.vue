@@ -3,39 +3,36 @@
     <!-- Hero Section -->
     <section id="hero" class="section hero">
       <div class="content">
-        <h1>Welcome to Sheerfolio</h1>
-        <p>Your tagline or introduction goes here.</p>
-        <button @click="scrollToSection('portfolio')">See My Work</button>
+        <h4>Hey there! I'm</h4>
+        <h1>SHEER JAY PIODOS</h1>
+        <h4>a Software Developer</h4>
+        <p>Hesitation is Defeat.</p>
+
       </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="section about">
-      <h2>About Me</h2>
-      <p>A brief description about yourself, your background, and skills.</p>
+      <ToolsPage/>
     </section>
 
     <!-- Portfolio Section -->
     <section id="portfolio" class="section portfolio">
-      <h2>My Work</h2>
       <PortfolioPage/>
     </section>
 
     <!-- Experience Section -->
     <section id="experience" class="section experience">
-      <h2>Experience</h2>
       <ExperiencePage/>
     </section>
 
     <!-- Education Section -->
     <section id="education" class="section education">
-      <h2>Education</h2>
       <EducationPage/>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="section contact">
-      <h2>Contact Me</h2>
       <ContactPage/>
     </section>
   </div>
@@ -43,6 +40,7 @@
 
 <script lang="js">
 import ContactPage from '@/views/ContactPage.vue'
+import ToolsPage from '@/views/ToolsPage.vue'
 import EducationPage from '@/views/EducationPage.vue'
 import ExperiencePage from '@/views/ExperiencePage.vue'
 import PortfolioPage from '@/views/PortfolioPage.vue'
@@ -54,6 +52,7 @@ export default {
     EducationPage, 
     ExperiencePage,
     PortfolioPage,
+    ToolsPage,
   },
   methods: {
     scrollToSection(sectionId) {
@@ -68,14 +67,16 @@ export default {
 
 <style scoped>
 /* Base Styles */
-.homepage {
-  background: red;
+#homepage {
+  margin: 0;
+  padding: 0;
+  background-color: #F7F7F2;
 }
 
+
 .section {
-  padding: 60px 20px;
-  margin: 0 auto;
-  max-width: 1200px;
+  width: 100vw;
+  box-sizing: border-box; 
 }
 
 h2 {
@@ -86,17 +87,13 @@ h2 {
 
 /* Hero Section */
 .hero {
-  background: #007bff;
-  color: white;
+  background: #F7F7F2;
+  color: black;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   text-align: center;
-}
-
-.hero .content {
-  max-width: 600px;
 }
 
 .hero h1 {
@@ -122,38 +119,5 @@ h2 {
 .hero button:hover {
   background: #0056b3;
   color: white;
-}
-
-/* About Section */
-.about {
-  background: #f9f9f9;
-}
-
-/* Portfolio Section */
-.portfolio {
-  background: #e9ecef;
-}
-
-/* Experience Section */
-.experience {
-  background: #ffffff;
-}
-
-/* Education Section */
-.education {
-  background: #f9f9f9;
-}
-
-/* Contact Section */
-.contact {
-  background: #e9ecef;
-}
-
-.contact h2 {
-  margin-bottom: 20px;
-}
-
-.contact p {
-  text-align: center;
 }
 </style>

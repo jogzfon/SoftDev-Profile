@@ -14,6 +14,8 @@ export default {
 </script>
 
 <style>
-
+#contact {
+  height: 100vw;
+}
 
 </style>

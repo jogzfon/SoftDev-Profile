@@ -15,8 +15,9 @@ export default {
 </script>
 
 <style>
-.header {
-  color: black;
+#portfolio {
+  height: 100vw;
+  background: #222725;
+  color: #F7F7F2;
 }
-
 </style>

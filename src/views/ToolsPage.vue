@@ -14,6 +14,9 @@ export default {
 </script>
 
 <style>
-
+  #tools {
+    height: 100vw;
+    color: #F7F7F2;
+  }
 
 </style>

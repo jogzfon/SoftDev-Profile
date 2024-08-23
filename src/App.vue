@@ -11,16 +11,20 @@
           <a href="#portfolio" class="navbar-link">Project</a>
           <a href="#about" class="navbar-link">About</a>
         </div>
-        <button class="contact-btn">Contact Me</button>
+        <button class="contact-btn"><a href="#contact" class="navbar-contact">Contact Me</a></button>
       </nav>
+    <HomePage />
     <router-view />
   </div>
 </template>
 
 <script>
-
+import HomePage from './views/HomePage.vue'
 export default {
   name: 'App',
+  components: {
+    HomePage
+  },
 }
 </script>
 
@@ -84,7 +88,12 @@ body {
   color: #000000;
   font-size: 18px;
 }
-
+.navbar-contact {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  font-style: normal;
+}
 .contact-btn {
   background-color: #899878;
   color: #ffffff; 

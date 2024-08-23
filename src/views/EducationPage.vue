@@ -14,6 +14,8 @@ export default {
 </script>
 
 <style>
-
+#education {
+  height: 100vw;
+}
 
 </style>
